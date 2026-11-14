@@ -1,0 +1,2029 @@
+{
+  "started": "2026-11-14T05:57:51.519Z",
+  "method": "Installed Windows Chrome and Edge; Playwright; offline browser context; direct file URL; screenshots and DOM geometry",
+  "browsers": [
+    {
+      "name": "Chrome",
+      "executablePath": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+      "checks": [
+        {
+          "label": "离线file页面正常打开，默认3000元",
+          "pass": true
+        },
+        {
+          "label": "四组场景-low",
+          "pass": true,
+          "evidence": {
+            "premium": 2565,
+            "score": 100,
+            "k": 0.9000000000000001,
+            "l3": 0.95
+          }
+        },
+        {
+          "label": "四组场景-ordinary",
+          "pass": true,
+          "evidence": {
+            "premium": 3000,
+            "score": 50,
+            "k": 1,
+            "l3": 1
+          }
+        },
+        {
+          "label": "四组场景-high",
+          "pass": true,
+          "evidence": {
+            "premium": 3300,
+            "score": 0,
+            "k": 1.1,
+            "l3": 1
+          }
+        },
+        {
+          "label": "四组场景-unauthorized",
+          "pass": true,
+          "evidence": {
+            "premium": 3000,
+            "score": null,
+            "k": 1,
+            "l3": 1
+          }
+        },
+        {
+          "label": "输入行为指标实时联动评分、风险条与保费对比",
+          "pass": true
+        },
+        {
+          "label": "智驾比例0%和100%不改变评分公式或保费方向",
+          "pass": true
+        },
+        {
+          "label": "授权状态-unauthorized不生成个人评分",
+          "pass": true
+        },
+        {
+          "label": "授权状态-withdrawn不生成个人评分",
+          "pass": true
+        },
+        {
+          "label": "严重不足无评分，部分缺失可评分时L3强制1",
+          "pass": true
+        },
+        {
+          "label": "必要统计量空值安全返回L1，不生成虚假评分",
+          "pass": true
+        },
+        {
+          "label": "负数与超范围输入暂停计算，不显示陈旧结果",
+          "pass": true
+        },
+        {
+          "label": "接管超过10秒按计划书截断，零分母与不足样本不评分",
+          "pass": true
+        },
+        {
+          "label": "情景分析独立快照，不覆盖主测算，复制按钮有效",
+          "pass": true
+        },
+        {
+          "label": "重置恢复普通默认及情景、经营假设",
+          "pass": true
+        },
+        {
+          "label": "五步路演1280x720关键区域与导航",
+          "pass": true,
+          "evidence": [
+            {
+              "step": 0,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 804.578125,
+                  "y": 24,
+                  "right": 862.578125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 914.21875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "problem-grid",
+                  "x": 64,
+                  "y": 292,
+                  "right": 1216,
+                  "bottom": 483.1875,
+                  "width": 1152,
+                  "height": 191.1875,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            },
+            {
+              "step": 1,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 804.578125,
+                  "y": 24,
+                  "right": 862.578125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 914.21875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "inputPanel",
+                  "x": 64,
+                  "y": 213.890625,
+                  "right": 1216,
+                  "bottom": 673.34375,
+                  "width": 1152,
+                  "height": 459.453125,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 804.578125,
+                  "y": 24,
+                  "right": 862.578125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 914.21875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "resultPanel",
+                  "x": 110,
+                  "y": 213.890625,
+                  "right": 1170,
+                  "bottom": 715.65625,
+                  "width": 1060,
+                  "height": 501.765625,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 804.578125,
+                  "y": 24,
+                  "right": 862.578125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 914.21875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "bridge-grid",
+                  "x": 64,
+                  "y": 195.796875,
+                  "right": 1216,
+                  "bottom": 435.796875,
+                  "width": 1152,
+                  "height": 240,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            },
+            {
+              "step": 4,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 797.078125,
+                  "y": 24,
+                  "right": 855.078125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 906.71875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 78.28125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "problem-grid",
+                  "x": 64,
+                  "y": 203,
+                  "right": 1216,
+                  "bottom": 446.125,
+                  "width": 1152,
+                  "height": 243.125,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "五步路演1920x1080关键区域与导航",
+          "pass": true,
+          "evidence": [
+            {
+              "step": 0,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1418.578125,
+                  "y": 29,
+                  "right": 1476.578125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1528.21875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "problem-grid",
+                  "x": 340,
+                  "y": 302,
+                  "right": 1580,
+                  "bottom": 493.1875,
+                  "width": 1240,
+                  "height": 191.1875,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            },
+            {
+              "step": 1,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1418.578125,
+                  "y": 29,
+                  "right": 1476.578125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1528.21875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "inputPanel",
+                  "x": 210,
+                  "y": 299.078125,
+                  "right": 1710,
+                  "bottom": 826.25,
+                  "width": 1500,
+                  "height": 527.171875,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1418.578125,
+                  "y": 29,
+                  "right": 1476.578125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1528.21875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "resultPanel",
+                  "x": 430,
+                  "y": 299.078125,
+                  "right": 1490,
+                  "bottom": 911.65625,
+                  "width": 1060,
+                  "height": 612.578125,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1418.578125,
+                  "y": 29,
+                  "right": 1476.578125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1528.21875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "bridge-grid",
+                  "x": 210,
+                  "y": 284.375,
+                  "right": 1710,
+                  "bottom": 503.375,
+                  "width": 1500,
+                  "height": 219,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            },
+            {
+              "step": 4,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1411.078125,
+                  "y": 29,
+                  "right": 1469.078125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1520.71875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 78.28125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "problem-grid",
+                  "x": 210,
+                  "y": 295.1875,
+                  "right": 1710,
+                  "bottom": 520.375,
+                  "width": 1500,
+                  "height": 225.1875,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "1280x720路演四场景可见，三层金额桥可复算",
+          "pass": true,
+          "evidence": [
+            {
+              "scene": "low",
+              "premium": 2565,
+              "behaviorDelta": -300,
+              "qualityDelta": -135
+            },
+            {
+              "scene": "ordinary",
+              "premium": 3000,
+              "behaviorDelta": 0,
+              "qualityDelta": 0
+            },
+            {
+              "scene": "high",
+              "premium": 3300,
+              "behaviorDelta": 300,
+              "qualityDelta": 0
+            },
+            {
+              "scene": "unauthorized",
+              "premium": 3000,
+              "behaviorDelta": 0,
+              "qualityDelta": 0
+            }
+          ]
+        },
+        {
+          "label": "最后一步完成演示可返回全部原页面，键盘导航有效",
+          "pass": true
+        },
+        {
+          "label": "375x812手机布局无横向溢出，场景可操作",
+          "pass": true,
+          "evidence": {
+            "scroll": 375,
+            "viewport": 375
+          }
+        },
+        {
+          "label": "无JS错误、无HTTP请求，离线刷新核心演示仍可运行",
+          "pass": true,
+          "evidence": {
+            "pageErrors": [],
+            "httpRequests": []
+          }
+        }
+      ],
+      "pageErrors": [],
+      "httpRequests": [],
+      "version": "157.0.8103.38"
+    },
+    {
+      "name": "Edge",
+      "executablePath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+      "checks": [
+        {
+          "label": "离线file页面正常打开，默认3000元",
+          "pass": true
+        },
+        {
+          "label": "四组场景-low",
+          "pass": true,
+          "evidence": {
+            "premium": 2565,
+            "score": 100,
+            "k": 0.9000000000000001,
+            "l3": 0.95
+          }
+        },
+        {
+          "label": "四组场景-ordinary",
+          "pass": true,
+          "evidence": {
+            "premium": 3000,
+            "score": 50,
+            "k": 1,
+            "l3": 1
+          }
+        },
+        {
+          "label": "四组场景-high",
+          "pass": true,
+          "evidence": {
+            "premium": 3300,
+            "score": 0,
+            "k": 1.1,
+            "l3": 1
+          }
+        },
+        {
+          "label": "四组场景-unauthorized",
+          "pass": true,
+          "evidence": {
+            "premium": 3000,
+            "score": null,
+            "k": 1,
+            "l3": 1
+          }
+        },
+        {
+          "label": "输入行为指标实时联动评分、风险条与保费对比",
+          "pass": true
+        },
+        {
+          "label": "智驾比例0%和100%不改变评分公式或保费方向",
+          "pass": true
+        },
+        {
+          "label": "授权状态-unauthorized不生成个人评分",
+          "pass": true
+        },
+        {
+          "label": "授权状态-withdrawn不生成个人评分",
+          "pass": true
+        },
+        {
+          "label": "严重不足无评分，部分缺失可评分时L3强制1",
+          "pass": true
+        },
+        {
+          "label": "必要统计量空值安全返回L1，不生成虚假评分",
+          "pass": true
+        },
+        {
+          "label": "负数与超范围输入暂停计算，不显示陈旧结果",
+          "pass": true
+        },
+        {
+          "label": "接管超过10秒按计划书截断，零分母与不足样本不评分",
+          "pass": true
+        },
+        {
+          "label": "情景分析独立快照，不覆盖主测算，复制按钮有效",
+          "pass": true
+        },
+        {
+          "label": "重置恢复普通默认及情景、经营假设",
+          "pass": true
+        },
+        {
+          "label": "五步路演1280x720关键区域与导航",
+          "pass": true,
+          "evidence": [
+            {
+              "step": 0,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 804.578125,
+                  "y": 24,
+                  "right": 862.578125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 914.21875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "problem-grid",
+                  "x": 64,
+                  "y": 292,
+                  "right": 1216,
+                  "bottom": 483.1875,
+                  "width": 1152,
+                  "height": 191.1875,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            },
+            {
+              "step": 1,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 804.578125,
+                  "y": 24,
+                  "right": 862.578125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 914.21875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "inputPanel",
+                  "x": 64,
+                  "y": 213.890625,
+                  "right": 1216,
+                  "bottom": 673.34375,
+                  "width": 1152,
+                  "height": 459.453125,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 804.578125,
+                  "y": 24,
+                  "right": 862.578125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 914.21875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "resultPanel",
+                  "x": 110,
+                  "y": 213.890625,
+                  "right": 1170,
+                  "bottom": 715.65625,
+                  "width": 1060,
+                  "height": 501.765625,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 804.578125,
+                  "y": 24,
+                  "right": 862.578125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 914.21875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "bridge-grid",
+                  "x": 64,
+                  "y": 195.796875,
+                  "right": 1216,
+                  "bottom": 435.796875,
+                  "width": 1152,
+                  "height": 240,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            },
+            {
+              "step": 4,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 797.078125,
+                  "y": 24,
+                  "right": 855.078125,
+                  "bottom": 60,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 906.71875,
+                  "y": 24,
+                  "right": 985,
+                  "bottom": 60,
+                  "width": 78.28125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 994,
+                  "y": 24,
+                  "right": 1062,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1071,
+                  "y": 24,
+                  "right": 1139,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1148,
+                  "y": 24,
+                  "right": 1216,
+                  "bottom": 60,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "problem-grid",
+                  "x": 64,
+                  "y": 203,
+                  "right": 1216,
+                  "bottom": 446.125,
+                  "width": 1152,
+                  "height": 243.125,
+                  "viewport": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "五步路演1920x1080关键区域与导航",
+          "pass": true,
+          "evidence": [
+            {
+              "step": 0,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1418.578125,
+                  "y": 29,
+                  "right": 1476.578125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1528.21875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "problem-grid",
+                  "x": 340,
+                  "y": 302,
+                  "right": 1580,
+                  "bottom": 493.1875,
+                  "width": 1240,
+                  "height": 191.1875,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            },
+            {
+              "step": 1,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1418.578125,
+                  "y": 29,
+                  "right": 1476.578125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1528.21875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "inputPanel",
+                  "x": 210,
+                  "y": 299.078125,
+                  "right": 1710,
+                  "bottom": 826.25,
+                  "width": 1500,
+                  "height": 527.171875,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1418.578125,
+                  "y": 29,
+                  "right": 1476.578125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1528.21875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "resultPanel",
+                  "x": 430,
+                  "y": 299.078125,
+                  "right": 1490,
+                  "bottom": 911.65625,
+                  "width": 1060,
+                  "height": 612.578125,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1418.578125,
+                  "y": 29,
+                  "right": 1476.578125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1528.21875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 70.78125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "bridge-grid",
+                  "x": 210,
+                  "y": 284.375,
+                  "right": 1710,
+                  "bottom": 503.375,
+                  "width": 1500,
+                  "height": 219,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            },
+            {
+              "step": 4,
+              "controls": [
+                {
+                  "id": "previousStep",
+                  "x": 1411.078125,
+                  "y": 29,
+                  "right": 1469.078125,
+                  "bottom": 65,
+                  "width": 58,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "nextStep",
+                  "x": 1520.71875,
+                  "y": 29,
+                  "right": 1599,
+                  "bottom": 65,
+                  "width": 78.28125,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "resetPresentation",
+                  "x": 1608,
+                  "y": 29,
+                  "right": 1676,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "",
+                  "x": 1685,
+                  "y": 29,
+                  "right": 1753,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "id": "exitPresentation",
+                  "x": 1762,
+                  "y": 29,
+                  "right": 1830,
+                  "bottom": 65,
+                  "width": 68,
+                  "height": 36,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ],
+              "boxes": [
+                {
+                  "id": "problem-grid",
+                  "x": 210,
+                  "y": 295.1875,
+                  "right": 1710,
+                  "bottom": 520.375,
+                  "width": 1500,
+                  "height": 225.1875,
+                  "viewport": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "1280x720路演四场景可见，三层金额桥可复算",
+          "pass": true,
+          "evidence": [
+            {
+              "scene": "low",
+              "premium": 2565,
+              "behaviorDelta": -300,
+              "qualityDelta": -135
+            },
+            {
+              "scene": "ordinary",
+              "premium": 3000,
+              "behaviorDelta": 0,
+              "qualityDelta": 0
+            },
+            {
+              "scene": "high",
+              "premium": 3300,
+              "behaviorDelta": 300,
+              "qualityDelta": 0
+            },
+            {
+              "scene": "unauthorized",
+              "premium": 3000,
+              "behaviorDelta": 0,
+              "qualityDelta": 0
+            }
+          ]
+        },
+        {
+          "label": "最后一步完成演示可返回全部原页面，键盘导航有效",
+          "pass": true
+        },
+        {
+          "label": "375x812手机布局无横向溢出，场景可操作",
+          "pass": true,
+          "evidence": {
+            "scroll": 375,
+            "viewport": 375
+          }
+        },
+        {
+          "label": "无JS错误、无HTTP请求，离线刷新核心演示仍可运行",
+          "pass": true,
+          "evidence": {
+            "pageErrors": [],
+            "httpRequests": []
+          }
+        }
+      ],
+      "pageErrors": [],
+      "httpRequests": [],
+      "version": "157.0.4341.46"
+    }
+  ],
+  "completed": "2026-11-14T05:58:02.754Z",
+  "files": {
+    "index.html": "358e2e619a11923603d1fba2896d12cbe41664a7000bd34701152e206bcf01eb",
+    "style.css": "4bddca665f7c2ea07a8527056f244969328bd0c587a93c19757364c7471d0ab6",
+    "model.js": "52b22145dcf9d1a5fd4f0ad593fc1b839020492ce0718b3e1c775d1ee8c61c7c",
+    "script.js": "db74e471a778bbe204512631350628b282028556e804f6abe9d77e30dcb8ad0a",
+    "presentation.js": "95f076ebd4b9e5132816e2abb44cfc41edf87fa55536ad1dca708103f9cf8979"
+  },
+  "pass": true,
+  "summary": {
+    "checks": 42,
+    "failed": []
+  }
+}

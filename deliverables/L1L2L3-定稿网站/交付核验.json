@@ -1,0 +1,37 @@
+{
+  "created": "2026-11-14T14:02:25.247068",
+  "model": "L1L2L3-1.0.0",
+  "word_sha256_before": "11DA524740352E1710068CC91BB2266EC8BCCCEA8FF68C1415953803CA1DE090",
+  "word_sha256_after": "11DA524740352E1710068CC91BB2266EC8BCCCEA8FF68C1415953803CA1DE090",
+  "word_unchanged": true,
+  "website_backup": "C:\\Users\\Luyuheng\\Desktop\\AutoShield-Demo\\backups\\website-before-L1L2L3-20261114-134648",
+  "website_files": {
+    "index.html": "358e2e619a11923603d1fba2896d12cbe41664a7000bd34701152e206bcf01eb",
+    "style.css": "4bddca665f7c2ea07a8527056f244969328bd0c587a93c19757364c7471d0ab6",
+    "model.js": "52b22145dcf9d1a5fd4f0ad593fc1b839020492ce0718b3e1c775d1ee8c61c7c",
+    "script.js": "db74e471a778bbe204512631350628b282028556e804f6abe9d77e30dcb8ad0a",
+    "presentation.js": "95f076ebd4b9e5132816e2abb44cfc41edf87fa55536ad1dca708103f9cf8979",
+    "README.md": "b484090ceef807374fb0c30c03e0dfd1d62eaafec1d8992f16501a00cf537059"
+  },
+  "homepage_hero_unchanged": true,
+  "sections_preserved": [
+    "home",
+    "problem",
+    "calculator",
+    "explain",
+    "innovation",
+    "logic",
+    "scenario",
+    "economics"
+  ],
+  "runtime_local_dependencies": [
+    "style.css",
+    "model.js",
+    "script.js",
+    "presentation.js"
+  ],
+  "model_checks": 76,
+  "randomized_cases": 1000,
+  "browser_checks": 42,
+  "fullscreen_both_browsers": true
+}

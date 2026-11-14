@@ -1,0 +1,28 @@
+{
+  "started": "2026-11-14T05:58:52.942Z",
+  "method": "Installed Windows Chrome/Edge headed, offline file URL, clicked actual enter/exit fullscreen controls",
+  "browsers": [
+    {
+      "name": "Chrome",
+      "version": "157.0.8103.38",
+      "pass": true,
+      "entered": true,
+      "exited": true,
+      "previousStep": "02 / 05",
+      "resetStep": "01 / 05",
+      "resetPrice": "¥3,000.00"
+    },
+    {
+      "name": "Edge",
+      "version": "157.0.4341.46",
+      "pass": true,
+      "entered": true,
+      "exited": true,
+      "previousStep": "02 / 05",
+      "resetStep": "01 / 05",
+      "resetPrice": "¥3,000.00"
+    }
+  ],
+  "completed": "2026-11-14T05:58:57.123Z",
+  "pass": true
+}

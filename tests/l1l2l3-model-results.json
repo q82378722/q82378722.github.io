@@ -1,0 +1,428 @@
+{
+  "suite": "approved-L1-times-L2-times-L3",
+  "version": "L1L2L3-1.0.0",
+  "completedAt": "2026-11-14T05:55:47.773Z",
+  "passed": 76,
+  "failed": 0,
+  "randomizedCases": 1000,
+  "checks": [
+    {
+      "name": "普通场景为默认参数，未储存预设保费或L2最终结果",
+      "status": "passed"
+    },
+    {
+      "name": "场景low：s=100，L2=0.9，L3=0.95，保费2565元",
+      "status": "passed"
+    },
+    {
+      "name": "场景ordinary：s=50，L2=1，L3=1，保费3000元",
+      "status": "passed"
+    },
+    {
+      "name": "场景high：s=0，L2=1.1，L3=1，保费3300元",
+      "status": "passed"
+    },
+    {
+      "name": "未授权场景不生成评分且保费为3000元",
+      "status": "passed"
+    },
+    {
+      "name": "三项普通风险指标均为50分，R=50，s=50，k=1",
+      "status": "passed"
+    },
+    {
+      "name": "非端点案例逐项复算，使用40%/35%/25%权重",
+      "status": "passed"
+    },
+    {
+      "name": "行为得分映射三个边界：100→0.90，50→1.00，0→1.10",
+      "status": "passed"
+    },
+    {
+      "name": "得分映射截断于0—100，L2截断于0.90—1.10",
+      "status": "passed"
+    },
+    {
+      "name": "接管时长超过10秒按原清洗规则截为10秒并说明",
+      "status": "passed"
+    },
+    {
+      "name": "脱手30%以上及急行为8次以上风险分均饱和100",
+      "status": "passed"
+    },
+    {
+      "name": "相同指标下智驾占比0%、60%、100%不改变得分系数保费",
+      "status": "passed"
+    },
+    {
+      "name": "相同智驾占比允许低中高三种行为风险",
+      "status": "passed"
+    },
+    {
+      "name": "unauthorized不读取行为指标、质量系数或生成个人评分",
+      "status": "passed"
+    },
+    {
+      "name": "withdrawn不读取行为指标、质量系数或生成个人评分",
+      "status": "passed"
+    },
+    {
+      "name": "明确数据严重不足直接回L1，不读取行为指标",
+      "status": "passed"
+    },
+    {
+      "name": "所需记录不能核验不评分",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"takeoverCount\":29}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"takeoverCount\":0}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"assistSeconds\":0}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"missingPercent\":20.01}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"tMed\":\"\"}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"handsOffPercent\":\"\"}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"harshMonthly\":\"\"}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"takeoverCount\":\"\"}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"assistSeconds\":\"\"}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"missingPercent\":\"\"}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "缺少可靠统计量或原演示条件不足{\"handsOffPercent\":null}返回L1",
+      "status": "passed"
+    },
+    {
+      "name": "部分缺失可评分时L3=1，不能因缺失额外加价或给完整数据折扣",
+      "status": "passed"
+    },
+    {
+      "name": "恰好20%缺失仍可计算，超过20%回L1",
+      "status": "passed"
+    },
+    {
+      "name": "宣称完整但实际有缺失安全降为部分缺失，L3=1并说明",
+      "status": "passed"
+    },
+    {
+      "name": "部分缺失忽略不适用的L3演示参数",
+      "status": "passed"
+    },
+    {
+      "name": "完整状态L3只使用明确演示参数，不按完整率自动映射",
+      "status": "passed"
+    },
+    {
+      "name": "总折扣允许超过10%，L2=.90和L3=.95相乘为14.5%折扣",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入base=-1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入base=0明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入base=明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入base=NaN明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入base=Infinity明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入base=null明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入base=abc明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入annualMileage=-1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入annualMileage=明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入assistPercent=-1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入assistPercent=100.1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入assistPercent=明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入tMed=-1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入tMed=0明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入tMed=0.99明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入tMed=NaN明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入tMed=Infinity明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入handsOffPercent=-1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入handsOffPercent=100.1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入handsOffPercent=true明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入harshMonthly=-1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入takeoverCount=-1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入takeoverCount=30.5明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入assistSeconds=-1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入missingPercent=-1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入missingPercent=100.1明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入qualityFactor=0.9499明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入qualityFactor=1.0001明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入qualityFactor=明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入auth=unknown明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "非法输入dataQuality=unknown明确报错且不显示旧评分",
+      "status": "passed"
+    },
+    {
+      "name": "核验状态字符串不被当作有效布尔授权，安全回L1且不评分",
+      "status": "passed"
+    },
+    {
+      "name": "无授权仍不得把无效L1当作报价",
+      "status": "passed"
+    },
+    {
+      "name": "L1精确到分：超过两位小数时授权与中性场景均明确拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "L1合法分金额：0.01精度不因浮点表示而误拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "无输入、数组和字符串都安全拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "DOM数字字符串与数字输入输出一致",
+      "status": "passed"
+    },
+    {
+      "name": "车型和年里程为比较条件，不重复叠加未定义系数",
+      "status": "passed"
+    },
+    {
+      "name": "纯函数不修改输入，默认场景和规则只读",
+      "status": "passed"
+    },
+    {
+      "name": "1000组确定性输入独立复算并检查边界、金额桥和舍入",
+      "status": "passed"
+    },
+    {
+      "name": "计划书独立精算算例：纯风险16910、条件案均41753.09、技术22546.67",
+      "status": "passed"
+    }
+  ],
+  "scenarios": {
+    "low": {
+      "input": {
+        "base": 3000,
+        "vehicle": "标准家用轿车（虚构）",
+        "annualMileage": 12000,
+        "assistPercent": 60,
+        "auth": "authorized",
+        "dataQuality": "complete",
+        "tMed": 1,
+        "handsOffPercent": 0,
+        "harshMonthly": 0,
+        "takeoverCount": 30,
+        "assistSeconds": 10000,
+        "missingPercent": 0,
+        "fieldsValid": true,
+        "qualityFactor": 0.95
+      },
+      "metrics": {
+        "R1": 0,
+        "R2": 0,
+        "R3": 0
+      },
+      "risk": 0,
+      "score": 100,
+      "k": 0.9000000000000001,
+      "l3": 0.95,
+      "premium": 2565
+    },
+    "ordinary": {
+      "input": {
+        "base": 3000,
+        "vehicle": "标准家用轿车（虚构）",
+        "annualMileage": 12000,
+        "assistPercent": 60,
+        "auth": "authorized",
+        "dataQuality": "complete",
+        "tMed": 5.5,
+        "handsOffPercent": 15,
+        "harshMonthly": 4,
+        "takeoverCount": 30,
+        "assistSeconds": 10000,
+        "missingPercent": 0,
+        "fieldsValid": true,
+        "qualityFactor": 1
+      },
+      "metrics": {
+        "R1": 50,
+        "R2": 50,
+        "R3": 50
+      },
+      "risk": 50,
+      "score": 50,
+      "k": 1,
+      "l3": 1,
+      "premium": 3000
+    },
+    "high": {
+      "input": {
+        "base": 3000,
+        "vehicle": "标准家用轿车（虚构）",
+        "annualMileage": 12000,
+        "assistPercent": 60,
+        "auth": "authorized",
+        "dataQuality": "complete",
+        "tMed": 10,
+        "handsOffPercent": 30,
+        "harshMonthly": 8,
+        "takeoverCount": 30,
+        "assistSeconds": 10000,
+        "missingPercent": 0,
+        "fieldsValid": true,
+        "qualityFactor": 1
+      },
+      "metrics": {
+        "R1": 100,
+        "R2": 100,
+        "R3": 100
+      },
+      "risk": 100,
+      "score": 0,
+      "k": 1.1,
+      "l3": 1,
+      "premium": 3300
+    },
+    "unauthorized": {
+      "input": {
+        "base": 3000,
+        "vehicle": "标准家用轿车（虚构）",
+        "annualMileage": 12000,
+        "assistPercent": 60,
+        "auth": "unauthorized",
+        "dataQuality": "complete",
+        "tMed": 5.5,
+        "handsOffPercent": 15,
+        "harshMonthly": 4,
+        "takeoverCount": 30,
+        "assistSeconds": 10000,
+        "missingPercent": 0,
+        "fieldsValid": true,
+        "qualityFactor": 1
+      },
+      "metrics": {
+        "R1": null,
+        "R2": null,
+        "R3": null
+      },
+      "risk": null,
+      "score": null,
+      "k": 1,
+      "l3": 1,
+      "premium": 3000
+    }
+  }
+}

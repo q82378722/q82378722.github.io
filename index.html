@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#102b38"><title>AutoShield｜智驾 UBI 创新车险</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<a class="skip-link" href="#calculator">跳到保费测算</a>
+<header class="topbar"><a class="brand" href="#home"><span class="brand-mark">A</span><span>AUTOSHIELD<small>智驾 UBI 创新车险</small></span></a><nav aria-label="主导航"><a href="#calculator">保费测算</a><a href="#logic">定价逻辑</a></nav><span class="demo-tag">L1 × L2 × L3 · 比赛模拟</span><button id="presentationToggle" class="presentation-toggle" type="button">开始演示</button><button class="fullscreen-button" data-fullscreen type="button">全屏展示</button></header>
+<div class="presentation-bar" id="presentationBar" hidden><div><span class="presentation-kicker">AUTOSHIELD · 路演模式</span><strong id="presentationStepTitle"></strong><small id="presentationStepHint"></small></div><div class="presentation-controls"><button id="previousStep" type="button">上一步</button><span id="presentationProgress" aria-live="polite">01 / 05</span><button id="nextStep" type="button">下一步 →</button><button id="resetPresentation" type="button">重置参数</button><button data-fullscreen type="button">全屏展示</button><button id="exitPresentation" type="button">退出演示</button></div></div>
+<div id="systemNotice" role="status" class="system-notice" hidden></div>
+<main id="presentationRoot">
+    <section class="hero" id="home"><div class="hero-copy"><p class="eyebrow"><span class="dot"></span> 智驾行为 · 透明定价</p><h1>让保费，<br><em>匹配真实风险。</em></h1><p class="lead">以使用方式与驾驶表现为线索，探索更贴近风险差异的智驾车险定价体验。</p><div class="hero-actions"><a class="button primary" href="#calculator">开始保费测算 <span>↗</span></a><span class="hero-note">本地交互演示 · 不采集个人信息</span></div><div class="hero-stats"><div><strong>使用方式</strong><span>按使用方式观察</span></div><div><strong>驾驶表现</strong><span>按驾驶表现模拟</span></div><div><strong>透明</strong><span>每项因子可解释</span></div></div></div><div class="hero-art" aria-label="抽象道路与风险数据可视化"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="road"><span></span></div><div class="art-card"><small>风险洞察 / 01</small><b>风险不同<br>定价也应不同</b><div class="art-line"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="art-foot"><span>虚构样例</span><span>● 演示就绪</span></div></div><div class="art-label">出行科技<br>× 保险创新</div></div></section>
+
+<section class="section problem" id="problem" aria-labelledby="problemTitle">
+ <div class="section-heading"><div><p class="eyebrow">01 / 从问题出发</p><h2 id="problemTitle">同一基准，看见行为差异</h2></div><p>传统车险已有车型、用途与历史赔付等因子。AutoShield探索辅助驾驶行为是否能带来额外的风险解释。</p></div>
+ <div class="problem-grid"><article><span>01</span><h3>使用比例，不等于风险结论</h3><p>辅助驾驶占比相同，也可能有不同的接管与监控表现；不能只因多用智驾就给折扣。</p></article><article><span>02</span><h3>数据少，不等于风险高</h3><p>未授权、撤回或数据不足时不生成评分，保持同条件非UBI基线，不用缺失数据惩罚用户。</p></article><article><span>03</span><h3>规则透明，效果等待验证</h3><p>今天展示的是虚构规则模型。真实定价效果，需要合法理赔与暴露数据以及持牌险企校准。</p></article></div>
+ <p class="section-note">项目定位：面向持牌险企的风险分析与数据治理技术方案，非已上线保险产品。</p>
+</section>
+<section class="section calculator" id="calculator" aria-labelledby="calcTitle">
+ <div class="section-heading"><div><p class="eyebrow">02 / 保费测算</p><h2 id="calcTitle">让每一步变化，都有依据</h2></div><div class="heading-actions"><p>依计划书计算行为得分，再叠乘 L2 与 L3；每一步均可复算。</p><button class="text-button" id="resetParameters" type="button">重置参数 ↺</button></div></div>
+ <div class="scene-grid" aria-label="四组虚构驾驶场景">
+  <button class="scene-card" data-scene="low" type="button"><span>虚构样例 01</span><strong>规范使用智驾</strong><small>接管 1 秒 · 脱手 0% · 急行为 0 次/月</small><b>载入场景 →</b></button>
+  <button class="scene-card selected" data-scene="ordinary" type="button" aria-pressed="true"><span>虚构样例 02 · 默认</span><strong>普通驾驶，中性风险</strong><small>接管 5.5 秒 · 脱手 15% · 急行为 4 次/月</small><b>载入场景 →</b></button>
+  <button class="scene-card" data-scene="high" type="button"><span>虚构样例 03</span><strong>接管不及时，高行为风险</strong><small>接管 10 秒 · 脱手 30% · 急行为 8 次/月</small><b>载入场景 →</b></button>
+  <button class="scene-card" data-scene="unauthorized" type="button"><span>虚构样例 04</span><strong>未授权数据</strong><small>不生成个人行为评分 · 回归基准</small><b>载入场景 →</b></button>
+ </div>
+ <div class="calc-grid">
+  <div class="panel inputs" id="inputPanel"><div class="panel-title"><span class="step">A</span><div><h3>车辆、行为与数据参数</h3><p>全部为本地虚构输入，不采集真实数据</p></div></div>
+   <form id="parameterForm" novalidate>
+    <h4 class="form-subtitle">A / 同条件基准与智驾使用程度</h4>
+    <div class="form-grid">
+     <label>L1 模拟基准保费（元/年）<input id="base" type="number" min="1" max="100000" step="0.01" value="3000" inputmode="decimal"></label>
+     <label>车型展示（虚构）<select id="vehicle"><option value="标准家用轿车（虚构）">标准家用轿车（虚构）</option><option value="新能源轿车（虚构）">新能源轿车（虚构）</option><option value="紧凑型SUV（虚构）">紧凑型SUV（虚构）</option></select></label>
+     <label>基准对应年里程（公里）<input id="annualMileage" type="number" min="0" max="200000" step="1" value="12000" inputmode="numeric"></label>
+     <label>智驾使用比例（%）<input id="assistPercent" type="number" min="0" max="100" step="0.1" value="60" inputmode="decimal"></label>
+    </div>
+    <p class="field-help">3,000元为独立设定的交互演示基准，非第3.1节技术保费。车型、年里程说明同条件基准；智驾比例仅描述使用程度，不进入行为评分公式。</p>
+    <h4 class="form-subtitle">B / 智驾行为与数据状态</h4>
+    <div class="form-grid">
+     <label>数据授权状态（演示）<select id="auth"><option value="authorized">有效授权</option><option value="unauthorized">未授权</option><option value="withdrawn">已撤回授权</option></select></label>
+     <label>数据完整性与上报状态<select id="dataQuality"><option value="complete">完整且上报可靠</option><option value="partial">部分缺失但可评分</option><option value="insufficient">严重不足，无法可靠评分</option></select></label>
+    </div>
+    <fieldset id="behaviorFields"><legend>三项评分指标 · 计划书第2.8节</legend><div class="form-grid">
+     <label>近30次接管反应中位数（秒）<input id="tMed" type="number" min="1" max="3600" step="0.1" value="5.5" inputmode="decimal"></label>
+     <label>智驾期间脱手占比（%）<input id="handsOffPercent" type="number" min="0" max="100" step="0.1" value="15" inputmode="decimal"></label>
+     <label>急驾驶行为月频次（次/月）<input id="harshMonthly" type="number" min="0" max="100000" step="1" value="4" inputmode="numeric"></label>
+     <label>L3 演示参数（完整数据时）<input id="qualityFactor" type="number" min="0.95" max="1" step="0.01" value="1" inputmode="decimal"></label>
+    </div>
+    <p class="field-help">L3仅在数据完整且可靠时取0.95–1.00。该值由演示者选择，未建立完整率自动映射；部分缺失时强制取1.00。接管&gt;10秒按10秒计，脱手&gt;100%拒绝评分。</p>
+    <details class="data-checks" id="dataChecks"><summary>有效统计量核验与缺失处理</summary><div class="form-grid">
+     <label>可核验接管事件数<input id="takeoverCount" type="number" min="0" max="100000" step="1" value="30" inputmode="numeric"></label>
+     <label>智驾运行时长分母（秒）<input id="assistSeconds" type="number" min="0" max="31622400" step="1" value="10000" inputmode="numeric"></label>
+     <label>关键单字段最大缺失率（%）<input id="missingPercent" type="number" min="0" max="100" step="0.1" value="0" inputmode="decimal"></label>
+    </div><label class="check-label"><input id="fieldsValid" type="checkbox" checked> 所需记录可核验，三项统计量可计算（演示状态）</label>
+    <p class="field-help">近30次接管与单字段缺失率&gt;20%不评分沿用原稿演示口径，非经验证阈值；分母须大于0。任何必要统计量缺失均不生成评分。部分缺失是其他记录缺失但上述统计量仍有效。</p></details>
+    </fieldset><div id="inputErrors" class="input-errors" role="alert" hidden></div>
+   </form>
+  </div>
+  <div class="panel results" id="resultPanel"><div class="panel-title"><span class="step">C</span><div><h3>UBI 模拟结果</h3><p id="resultContext">普通风险 · 虚构样例</p></div><span class="live"><i></i> 实时计算</span></div>
+   <div class="result-highlight" aria-live="polite"><span>年度 UBI 模拟保费</span><strong id="ubiPrice">¥3,000.00</strong><small>比赛模拟演示，非实际保险报价</small></div>
+   <div class="metric-grid"><div><span>行为得分 s</span><strong id="scoreValue">50.0</strong><small>演示评分，非事故真值</small></div><div><span>L2 行为系数 k</span><strong id="kValue">1.0000</strong><small>范围 0.90–1.10</small></div><div><span>L3 数据质量系数</span><strong id="l3Value">1.0000</strong><small>完整数据的演示参数</small></div></div>
+   <div class="data-status" id="dataStatus" role="status"></div>
+   <div class="risk-bars" aria-label="三项行为风险分，0至100"><div><span>R1 接管风险 · 40%</span><b id="riskR1Value">50.00</b><i><em id="riskR1Bar"></em></i></div><div><span>R2 脱手风险 · 35%</span><b id="riskR2Value">50.00</b><i><em id="riskR2Bar"></em></i></div><div><span>R3 急行为风险 · 25%</span><b id="riskR3Value">50.00</b><i><em id="riskR3Bar"></em></i></div><p class="risk-score-summary" id="riskSummary">R = 50.00 → s = 50.00 → L2 = 1.0000</p></div>
+   <div class="comparison-chart" aria-label="传统基准与UBI模拟保费对比"><div class="chart-row"><span>非 UBI 基准</span><strong id="traditionalPrice">¥3,000.00</strong><div class="chart-track"><i id="traditionalBar"></i></div></div><div class="chart-row active"><span>UBI 模拟</span><strong id="ubiCompare">¥3,000.00</strong><div class="chart-track"><i id="ubiBar"></i></div></div></div>
+   <div class="saving"><span id="deltaText">较同条件基准</span><strong id="delta">¥0.00</strong></div><p class="result-disclaimer">比赛模拟演示，非实际保险报价。评分、权重与门槛均为比赛假设，没有实际事故统计支撑。</p>
+   <details class="score-details"><summary>查看逐项公式代入与计算过程</summary><dl id="scoreDetails"></dl><p class="field-help">中间量与系数在页面上按显示精度舍入，计算保留完整精度，仅最终金额舍入到分。分层桥图的阶段差额按显示金额相减，以保持合计一致。</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="explain"><div class="section-heading"><div><p class="eyebrow">03 / 保费差异</p><h2>基准 × 行为 × 数据质量</h2></div><p>金额桥图逐层解释，不把相乘的系数伪装成可相加的风险贡献。</p></div>
+ <div class="bridge-grid"><article><span>L1 · 同条件模拟基准</span><strong id="bridgeBase">¥3,000.00</strong><p>车型、用途、保障及预计年里程的非UBI锚点。</p></article><article><span>L2 · 行为调整后 L1 × k</span><strong id="bridgeRaw">¥3,000.00</strong><p id="behaviorDelta">行为假设变化：¥0.00</p></article><article><span>L3 · 叠乘数据质量系数</span><strong id="bridgeFinal">¥3,000.00</strong><p id="qualityDelta">数据质量假设变化：¥0.00</p></article></div><p class="result-disclaimer">比赛模拟演示，非实际保险报价。无法评分时L2=L3=1，直接返回L1，不表示用户低风险。L2的±10%限制不等于总保费折扣上限。</p>
+ <div class="formula"><span class="formula-label">计划书定稿 · 三层乘法模型</span><span>最终模拟保费 = L1 × L2 × L3</span><span class="formula-break">L2 = k = 1.10 − 0.002s，s = 100 − R</span><span class="formula-break">R = 0.40R1 + 0.35R2 + 0.25R3</span></div>
+ <p class="section-note">权重、阈值与线性映射均为演示假设。智驾比例不参与上述计算；前三组同为60%，行为不同，结果不同。最低组合0.90×0.95=0.855，即14.5%演示折扣。</p>
+</section>
+<section class="section" id="innovation"><div class="section-heading"><div><p class="eyebrow">04 / 创新与边界</p><h2>把可解释，变成可验证</h2></div><p>今天交付规则、数据治理与可运行演示。未来用合法理赔和暴露数据验证增量价值。</p></div><div class="problem-grid"><article><span>01 / 行为构成</span><h3>相同智驾占比，不同使用风险</h3><p>按接管中位数、脱手占比与急行为月频次评分；不奖励单纯增加智驾使用比例。</p></article><article><span>02 / 数据治理</span><h3>无法可靠评分，就回到基准</h3><p>未授权、撤回或严重不足时L2=L3=1；部分缺失但可评分时L3=1，不因缺失额外加价。</p></article><article><span>03 / 落地顺序</span><h3>先验证数据，再谈真实费率</h3><p>拟与持牌险企做字段核查与离线回溯。团队提供技术服务，险企负责真实条款费率及承保理赔。</p></article></div><div class="assumption-banner"><span>适用边界</span><p>当前为 L2 组合驾驶辅助概念演示。L3 有条件自动驾驶另行研究。评分不认定事故责任、不自动拒赔，也不证明已降赔。车企/险企合作及接口均未落实。</p></div></section>
+<section class="section logic" id="logic"><div class="section-heading"><div><p class="eyebrow">05 / 定价逻辑</p><h2>每个变量，都说清楚</h2></div><p>L1/L2/L3在这里表示定价层次，与L2/L3自动化等级不同。全部权重、阈值、区间和门槛均为比赛演示假设。</p></div>
+ <div class="logic-cards"><article><span>L1 / 金额基线</span><h3>同条件非 UBI 模拟基准</h3><p>默认3,000元/年，是独立设定的交互演示基准。车型、年里程、保障等已体现在基准假设中，不另乘一次车型或里程系数。</p></article><article><span>L2 / 行为调整</span><h3>k：由三项输入自动计算</h3><p>R=0.40R1+0.35R2+0.25R3；s=100−R；k=1.10−0.002s。s截断于0–100，k截断于0.90–1.10。s=100/50/0分别对应0.90/1.00/1.10。</p></article><article><span>L3 / 数据质量</span><h3>0.95–1.00：演示假设参数</h3><p>完整且可靠时选择示例值，未按完整率自动映射。部分缺失但可评分时L3=1；未授权、撤回或无法可靠评分时L2=L3=1，且不生成评分。</p></article></div>
+ <details class="logic-details" open><summary>计划书第2.7、2.8、3.2节：评分标尺与数据规则</summary><div class="rule-grid"><div><h3>三个实际评分因子</h3><p>R1 = (t_med − 1) ÷ 9 × 100，t_med为近30次接管反应中位数，清洗后1–10秒。</p><p>R2 = min(脱手占比 ÷ 30% × 100, 100)。输入15%时先按15÷100=0.15换算，0.15÷0.30×100=50。</p><p>R3 = min(急驾驶行为月频次 ÷ 8 × 100, 100)。</p><p>40%、35%、25%的权重与1–10秒、30%、8次/月标尺均为比赛演示假设；不能据此认定过错或事故责任。第2.4节用于维度说明，实际评分严格以第2.8节公式为准；不加入第四因子或单项自动涨价规则。</p></div><div><h3>有效评分与授权规则</h3><p>有效授权、所需记录可核验、分母大于0且必要统计量可计算。沿用近30次观察及关键单字段缺失率&gt;20%不评分的原稿演示规则，均非已验证的可靠性阈值。</p><p>未授权、撤回或严重不足：不读取行为字段、不生成个人评分，L2=L3=1。部分缺失但可评分：L2按有效数据算，L3=1。完整且可靠：L3由演示者选择0.95–1.00，优惠仍待实证验证。</p><p>接管&gt;10秒截为10秒；脱手&gt;100%属异常，不按低风险处理；空统计量或无效分母均不评分。不推定数据越少风险越高。授权状态只是本地演示，不采集身份、车辆或真实驾驶数据，不追溯改变实际保险合同。</p></div></div></details>
+ <div class="source-row"><div><span class="source-dot"></span><b>数据来源状态</b><span>全虚构样例 · 无真实车辆或理赔数据 · 无外部连接</span></div><span class="source-badge">仅本地计算</span></div>
+</section>
+<section class="section scenario" id="scenario"><div class="section-heading"><div><p class="eyebrow">06 / 情景分析</p><h2>调整假设，比较结果</h2></div><div class="heading-actions"><p>在当前参数的独立快照上试算，不改变主测算。</p><button id="copyScenario" class="text-button" type="button">复制当前参数 →</button></div></div>
+ <div class="panel"><p id="scenarioSnapshot" class="field-help"></p><form id="scenarioForm" class="scenario-grid" novalidate>
+ <label>授权状态<select id="scenarioAuth"><option value="authorized">有效授权</option><option value="unauthorized">未授权</option><option value="withdrawn">已撤回</option></select></label>
+ <label>数据状态<select id="scenarioQuality"><option value="complete">完整且可靠</option><option value="partial">部分缺失但可评分</option><option value="insufficient">严重不足</option></select></label>
+ <label>智驾使用比例（%）<input id="scenarioAssist" type="number" min="0" max="100" value="60"></label>
+ <label>接管中位数（秒）<input id="scenarioTMed" type="number" min="1" max="3600" step="0.1" value="5.5"></label>
+ <label>脱手占比（%）<input id="scenarioHands" type="number" min="0" max="100" step="0.1" value="15"></label>
+ <label>急行为月频次<input id="scenarioHarsh" type="number" min="0" max="100000" step="1" value="4"></label>
+ <label>完整数据 L3 演示参数<input id="scenarioL3" type="number" min="0.95" max="1" step="0.01" value="1"></label>
+ </form><p id="scenarioStatus" class="field-help" role="status"></p><p id="scenarioErrors" role="alert" class="input-errors" hidden></p>
+ <div class="scenario-result" aria-live="polite"><div><span>已复制的基线</span><strong id="scenarioCurrent">¥3,000.00</strong></div><span class="scenario-arrow">→</span><div><span>情景模拟保费</span><strong id="scenarioPrice">¥3,000.00</strong></div><div><span>情景 s / L2 / L3</span><strong id="scenarioMetrics">50.00 / 1.0000 / 1.0000</strong></div><div><span>较快照变化</span><strong id="scenarioDelta">¥0.00</strong></div></div><p class="result-disclaimer">比赛模拟演示，非实际保险报价。与主测算使用同一公式，不将案例金额写成固定输出；修改此处不改变主测算。</p></div>
+
+</section>
+<section class="section economics" id="economics"><div class="section-heading"><div><p class="eyebrow">07 / 精算与经营</p><h2>价格变化，不等于赔款变化</h2></div><p>评分规则尚未由真实事故数据校准，不能据 k 自动推出赔款变化或75%赔付率。</p></div><div class="economics-grid"><article class="panel"><h3>计划书第3.1节 · 独立精算情景</h3><span class="source-badge">不是本产品实际费率</span><p>P₀=Σ(wᵢ × λᵢ × μᵢ)</p><p class="teaching-formula">0.55×0.50×40,000<br>+0.25×0.36×47,000<br>+0.20×0.20×42,000<br>= <b>16,910元</b></p><p>技术保费=16,910÷75%=<b>22,546.67元</b>。</p><p class="field-help">以上为计划书原参数的情景测算，统一标准年暴露，未由实际理赔数据校准。组合条件案均=16,910÷0.405=41,753.09元/件。与网站独立设定的3,000元演示基准分开，不作为同一产品真实费率。</p></article><article class="panel"><h3>固定赔款假设，观察比率变化</h3><p class="field-help">下列预期赔款是独立经营假设，不由行为得分预测；费用率也仅为情景。无真实理赔数据就不能证明经营效果。</p><div class="form-grid"><label>假设年度预期赔款（元）<input id="expectedLoss" type="number" min="0" max="1000000" value="2250" step="0.01"></label><label>假设费用率（%）<input id="expensePercent" type="number" min="0" max="100" value="25" step="0.1"></label></div><div class="ratio-results"><p>基准下假设赔付率：<strong id="baselineLR">75.00%</strong></p><p>当前UBI下假设赔付率：<strong id="currentLR">75.00%</strong></p><p>假设综合成本率：<strong id="currentCR">100.00%</strong></p></div><p id="economicsError" class="input-errors" role="alert" hidden></p><p class="field-help">赔付率=预期赔款÷模拟保费；综合成本率=赔付率+费用率（简化同口径假设，不含其他加载）。75%参考改革背景，非本项目已实现目标。</p><p class="result-disclaimer">比赛模拟演示，非实际保险报价，不构成盈利预测。</p></article></div></section>
+</main>
+<footer><a class="brand" href="#home"><span class="brand-mark">A</span><span>AUTOSHIELD<small>智驾 UBI 创新车险</small></span></a><p>规则透明，效果有待验证。<br><span>比赛演示 · 不承保、不销售、不采集真实车辆数据 · 所有金额非实际保险报价</span></p><a class="back-top" href="#home">返回顶部 ↑</a></footer>
+<script src="model.js"></script><script src="script.js"></script><script src="presentation.js"></script>
+</body></html>
+
+
+
